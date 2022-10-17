@@ -72,6 +72,12 @@ footer p{
 
 /* <!-- Sebastiano e Gerardo --> */
 /* header e home */
+header{
+    background-image: url(../images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
 
 
 
