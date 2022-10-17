@@ -14,7 +14,6 @@
 body {
     font-family: myfont;
     color: #2E2E2E;
-    padding: 7%;
     text-align: center;
 }
 
@@ -61,7 +60,7 @@ aside p{
 
 
 #news h1, #blog h1 {
-    /* color: #fff;  */
+    color: #fff; 
 }
 
 /* footer style */
