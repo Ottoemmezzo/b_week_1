@@ -1,5 +1,16 @@
-*{
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: myfont;
+
+}
+
