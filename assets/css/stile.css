@@ -76,7 +76,8 @@ header{
     background-image: url(../images/header.jpg);
     background-position: center;
     background-size: cover;
-    
+    height:300px;
+
 }
 
 
