@@ -97,9 +97,6 @@ footer p {
 
 
 
-/* <!-- Sebastiano e Gerardo --> */
-
-
 
 /* HEADER */
 
@@ -108,16 +105,19 @@ footer p {
 
 
 #copertina {
-    background-image: url(../images/header.jpg);
-    height: 300px;
+    /* background-image: url(../images/header.jpg);
+    height: 300px; */
     margin-bottom: -60px;
     background-size: cover;
     position: relative;
-    z-index: -2;
+}
+
+#copertina img{
+    width: 100%;
+
 }
 
 /* da ripetere per tutti gli sfondi */
-
 
 
 
@@ -130,15 +130,10 @@ footer p {
     opacity: 0.3;
     width: 100%;
     height: 100%;
-    z-index: -1;
 }
 
 
-
-
 /* barra header con nav */
-
-
 
 
 
@@ -193,6 +188,7 @@ nav ul li:hover {
 }
 
 /* tolgo checkbox */
+
 #tendina {
     display: none;
 }
@@ -253,8 +249,6 @@ nav ul li:hover {
 }
 
 
-
-/* <!-- Serena e giuseppe --> */
 
 
 /* ABOUT US */
@@ -446,11 +440,12 @@ nav ul li:hover {
 }
 
 
-/* <!-- Valeria e Angelo--> */
 
 
 
 /* MENU */
+
+
 
 
 #menu h1 span {
@@ -542,7 +537,12 @@ nav ul li:hover {
 
 
 
+
+
 /* NEWS */
+
+
+
 
 #news {
     position: relative;
@@ -609,6 +609,8 @@ nav ul li:hover {
 
 /* CONTACTS */
 
+
+
 #contacts {
     margin: auto;
 }
@@ -620,7 +622,7 @@ nav ul li:hover {
     flex-direction: column;
     justify-content: space-around;
     margin: 20px;
-    
+
 }
 
 form input {
@@ -798,11 +800,12 @@ footer a {
     aside {
         width: 720px;
     }
-    #contacts form{
+
+    #contacts form {
         margin: 0;
     }
 
-    #contacts h3{
+    #contacts h3 {
         margin-left: 0;
     }
 }
@@ -976,7 +979,7 @@ footer a {
     aside {
         width: 940px;
     }
-    
+
 }
 
 @media screen and (min-width: 992px) {
@@ -1062,7 +1065,7 @@ footer a {
 /* media 1200px */
 
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
 
     header,
     #home,
@@ -1071,17 +1074,10 @@ footer a {
     #newsContainer,
     #contacts,
     aside {
-        width: 1172px;
+        width: 1142px;
     }
-    
+
 }
-
-/* @media screen and (min-width: 1200px) {
-    header {
-        width: 1140px;
-    }
-} */
-
 
 @media screen and (min-width: 1200px) {
 
@@ -1101,7 +1097,7 @@ footer a {
 
 @media screen and (min-width: 1200px) {
     .riquadroGriglia {
-        width: 293px;
+        width: 285px;
         height: 220px;
     }
 
