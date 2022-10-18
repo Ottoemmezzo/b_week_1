@@ -14,7 +14,6 @@
 body {
     font-family: myfont;
     color: #2E2E2E;
-    padding: 7%;
     text-align: center;
 }
 
@@ -58,10 +57,15 @@ aside p{
     color: #938463;
 }
 
-
+hr {
+    border: none;
+    border-bottom: 1px solid #cbc4b5;
+    margin: 1em auto;
+    width: 5em;
+}
 
 #news h1, #blog h1 {
-    /* color: #fff;  */
+    color: #fff;
 }
 
 /* footer style */
@@ -72,10 +76,62 @@ footer p{
 
 /* <!-- Sebastiano e Gerardo --> */
 /* header e home */
+#home {
+    text-align: left;
+    padding: 50px 0;
+    margin: 0 auto;
+    display: inline-block;
+}
 
+/* .prova {
+    margin: 0 auto;
+    padding: 0 15px;
+} */
 
+.testo {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+#home h3{
+    text-transform: uppercase;
+    margin: 20px 0;
+}
 
+.slider {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    overflow: scroll;
+}
 
+@media screen and (min-width: 1200px) {
+    #home {
+        max-width: 1140px;
+    }
+}
+
+.slider img{
+    width: 53%;
+    height: 53%;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 992px){
+    .slider img {
+        padding: 0 30px 50px 0;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .slider img {
+        width: 65%;
+        height: 65%;
+    }
+}
 
 
 /* <!-- Serena e giuseppe --> */
@@ -88,3 +144,118 @@ footer p{
 
 /* <!-- Valeria e Angelo--> */
 /* menu e newsletter */
+
+#news {
+    width: 100%;
+    background: url(../images/overlay-pattern2.png),url(../images/subscribe-bg.jpg);
+    opacity: 0.3, 1;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed;
+    padding: 100px 0;
+    position: relative;
+}
+
+#news h1 {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 40px 0;
+}
+
+#news span {
+    text-transform: lowercase;
+}
+
+#news p {
+    padding: 25px 0;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+#inputNews {
+    width: 95%;
+    height: 65px;
+    margin: 20px;
+    border: none;
+    padding: 10px;
+}
+
+#news button {
+    padding: 25px 50px;
+    margin: 0 20px;
+    display: block;
+    background-color: #7ec3bb;
+    color: #fff;
+    border: none;
+}
+
+@media screen and (min-width: 768px) {
+    #inputNews {
+        width: 450px;
+        height: 65.5px;
+        margin-right: 0;
+    }
+
+    #news button {
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+}
+
+#contacts {
+    margin: auto;
+}
+
+@media screen and (min-width: 1200px) {
+    #contacts {
+        max-width: 1140px;
+    }
+}
+
+#contacts form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+form input {
+    margin: 5px 0;
+    height: 48px;
+    border: 1px solid #cbc4b5;
+    padding: 6px 12px;
+}
+
+form textarea {
+    font-size: 1.1rem;
+    font-family: myfont;
+    border: 1px solid #cbc4b5;
+    padding-top: 5px;
+    padding: 6px 12px;
+}
+
+#contacts span {
+    text-transform: uppercase;
+}
+
+#contacts h3 {
+    text-transform: uppercase;
+    text-align: left;
+    margin: 20px;
+}
+
+#contacts button {
+    height: 48px;
+    width: 100%;
+    margin: 10px 0;
+    
+    border: none;
+    background-color: #ff4f02;
+    color: #fff;
+}
