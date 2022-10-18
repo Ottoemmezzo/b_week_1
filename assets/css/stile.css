@@ -83,11 +83,6 @@ footer p{
     display: inline-block;
 }
 
-/* .prova {
-    margin: 0 auto;
-    padding: 0 15px;
-} */
-
 .testo {
     display: flex;
     align-items: baseline;
@@ -134,27 +129,38 @@ footer p{
 }
 
 
+
 /* <!-- Serena e giuseppe --> */
 /* sezione blog e about us */
-
-
-
 
 
 
 /* <!-- Valeria e Angelo--> */
 /* menu e newsletter */
 
-#news {
-    width: 100%;
-    background: url(../images/overlay-pattern2.png),url(../images/subscribe-bg.jpg);
-    opacity: 0.3, 1;
-    background-size: auto, cover;
-    background-repeat: repeat, no-repeat;
-    background-attachment: fixed;
-    padding: 100px 0;
+ #news {
     position: relative;
+    background-image: url('../images/subscribe-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    z-index: -2;
+    padding-bottom: 7em;
 }
+
+#news::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../images/overlay-pattern.png') black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 
 #news h1 {
     text-transform: uppercase;
@@ -175,14 +181,13 @@ footer p{
 #inputNews {
     width: 95%;
     height: 65px;
-    margin: 20px;
     border: none;
     padding: 10px;
 }
 
 #news button {
-    padding: 25px 50px;
-    margin: 0 20px;
+    padding: 25.6px 50px;
+    margin: 10px;
     display: block;
     background-color: #7ec3bb;
     color: #fff;
