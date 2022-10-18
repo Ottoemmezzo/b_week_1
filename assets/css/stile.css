@@ -59,7 +59,12 @@ aside p{
     color: #938463;
 }
 
-
+hr {
+    border: none;
+    border-bottom: 1px solid #cbc4b5;
+    margin: 1em auto;
+    width: 5em;
+}
 
 #news h1, #blog h1 {
     color: #fff; 
@@ -73,6 +78,12 @@ footer p{
 
 /* <!-- Sebastiano e Gerardo --> */
 /* header e home */
+#home {
+    text-align: left;
+    padding: 50px 0;
+    margin: 0 auto;
+    display: inline-block;
+}
 
 /* immagine di copertina */
 #copertina{
@@ -155,7 +166,24 @@ nav ul li:hover{
 }
 
 
+.testo {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+#home h3{
+    text-transform: uppercase;
+    margin: 20px 0;
+}
 
+.slider {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    overflow: scroll;
+}
 
 /* media header */
 
@@ -217,6 +245,31 @@ nav ul li:hover{
         width:1140px;
     }
 }
+@media screen and (min-width: 1200px) {
+    #home {
+        max-width: 1140px;
+    }
+}
+
+.slider img{
+    width: 53%;
+    height: 53%;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 992px){
+    .slider img {
+        padding: 0 30px 50px 0;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .slider img {
+        width: 65%;
+        height: 65%;
+    }
+}
 
 
 
@@ -225,8 +278,132 @@ nav ul li:hover{
 
 
 
-
-
-
 /* <!-- Valeria e Angelo--> */
 /* menu e newsletter */
+
+ #news {
+    position: relative;
+    background-image: url('../images/subscribe-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    z-index: -2;
+    padding-bottom: 7em;
+}
+
+#news::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../images/overlay-pattern.png') black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+#news h1 {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 40px 0;
+}
+
+#news span {
+    text-transform: lowercase;
+}
+
+#news p {
+    padding: 25px 0;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+#inputNews {
+    width: 95%;
+    height: 65px;
+    border: none;
+    padding: 10px;
+}
+
+#news button {
+    padding: 25.6px 50px;
+    margin: 10px;
+    display: block;
+    background-color: #7ec3bb;
+    color: #fff;
+    border: none;
+}
+
+@media screen and (min-width: 768px) {
+    #inputNews {
+        width: 450px;
+        height: 65.5px;
+        margin-right: 0;
+    }
+
+    #news button {
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+}
+
+#contacts {
+    margin: auto;
+}
+
+@media screen and (min-width: 1200px) {
+    #contacts {
+        max-width: 1140px;
+    }
+}
+
+#contacts form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+form input {
+    margin: 5px 0;
+    height: 48px;
+    border: 1px solid #cbc4b5;
+    padding: 6px 12px;
+}
+
+form textarea {
+    font-size: 1.1rem;
+    font-family: myfont;
+    border: 1px solid #cbc4b5;
+    padding-top: 5px;
+    padding: 6px 12px;
+}
+
+#contacts span {
+    text-transform: uppercase;
+}
+
+#contacts h3 {
+    text-transform: uppercase;
+    text-align: left;
+    margin: 20px;
+}
+
+#contacts button {
+    height: 48px;
+    width: 100%;
+    margin: 10px 0;
+    
+    border: none;
+    background-color: #ff4f02;
+    color: #fff;
+}
