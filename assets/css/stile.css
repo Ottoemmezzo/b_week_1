@@ -276,6 +276,21 @@ nav ul li:hover{
 /* <!-- Serena e giuseppe --> */
 /* sezione blog e about us */
 
+#about {
+    padding: 100px 0px;
+    background: #F6F6F6;
+}
+
+#about .block {
+    text-align: center;
+}
+
+#about .block p {
+    color: #959595;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 40px 0px;
+}
 
 
 /* <!-- Valeria e Angelo--> */
