@@ -83,27 +83,31 @@ hr {
     width: 5em;
 }
 
-#news h1, #blog h1 {
-    color: #fff; 
+#news h1,
+#blog h1 {
+    color: #fff;
 }
 
 /* footer style */
+
 
 footer p {
     color: #454545;
 }
 
+
+
 /* <!-- Sebastiano e Gerardo --> */
-/* header e home */
-#home {
-    text-align: left;
-    padding: 50px 0;
-    margin: 0 auto;
-    display: inline-block;
-}
+
+
+
+/* HEADER */
+
 
 /* immagine di copertina */
-#copertina{
+
+
+#copertina {
     background-image: url(../images/header.jpg);
     height: 300px;
     margin-bottom: -60px;
@@ -111,11 +115,16 @@ footer p {
     position: relative;
     z-index: -2;
 }
+
 /* da ripetere per tutti gli sfondi */
-#copertina::before{
-    content:"";
+
+
+
+
+#copertina::before {
+    content: "";
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     background: url(../images/overlay-pattern.png) black;
     opacity: 0.3;
@@ -124,20 +133,17 @@ footer p {
     z-index: -1;
 }
 
-@media screen and (min-width: 1200px){
-    header{
-        width:1140px;
-    }
-}
-@media screen and (min-width: 1200px) {
-    #home {
-        max-width: 1140px;
-    }
-}
 
- /* barra header con nav */
-header{
-    width: 80%;
+
+
+/* barra header con nav */
+
+
+
+
+
+header {
+    width: 91vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -145,15 +151,16 @@ header{
     top: 0;
     flex-wrap: wrap;
     padding: 20px 20px;
-    background-color:rgba(255,255,255, 0.9);
-    margin:auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 0 auto;
     font-weight: bold;
+    z-index: 100;
 }
 
-nav{
+nav {
     width: 100%;
     height: 0;
-    background-color:rgba(255,255,255, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
     overflow: hidden;
     transition: height 0.8s ease;
     position: absolute;
@@ -162,36 +169,57 @@ nav{
 
 }
 
-nav ul li{
+nav ul li {
     text-align: left;
     border: 0;
     width: 20%;
     transition: width 1s ease;
-    padding: 10px 8px ;
+    padding: 10px 8px;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: #474747;
     text-transform: uppercase;
 }
 
-nav ul li:hover{
+nav ul li:hover {
     width: 100%;
     border-bottom: 2px solid red;
 }
 
-#tendina:checked~nav{
+#tendina:checked~nav {
     height: 300px;
 }
+
 /* tolgo checkbox */
 #tendina {
     display: none;
 }
-.logo img{
+
+.logo img {
     width: 150px;
 }
 
+
+
+
+
+
+/* HOME */
+
+
+
+
+
+
+#home {
+    text-align: left;
+    padding: 50px 0;
+    margin: 0 auto;
+    display: inline-block;
+    width: 91vw;
+}
 
 .testo {
     display: flex;
@@ -199,7 +227,9 @@ nav ul li:hover{
     justify-content: space-between;
     font-size: 1.1rem;
 }
-#home h3{
+
+
+#home h3 {
     text-transform: uppercase;
     margin: 20px 0;
 }
@@ -212,101 +242,38 @@ nav ul li:hover{
     overflow: scroll;
 }
 
-/* media header */
-
-@media screen and (min-width: 768px) {
-    header{
-        width:700px;
-        flex-wrap: nowrap;
-    }
-    header label{
-        display: none;
-    }
-    nav{
-        height: auto;
-        overflow: none;
-        width:70%;
-        position: static;
-        background-color: rgba(255,255,255, 0);
-        padding-left: 15px;
-        text-align: center;
-        
-    }
-
-     nav ul{
-        display: flex;
-        justify-content: center;
-     }
-
-     nav ul li{
-        font-size: 0.8rem;
-        width: auto;
-     }
-     nav ul li:hover{
-       border: 0;
-       width: auto;
-       border-bottom: 2px solid red;
-    
-     }
-
-     nav ul li:first-child{
-        border-bottom: 2px solid red;
-     }
-}
-
-@media screen and (min-width: 992px){
-    header{
-        width:95%;
-    }
-    header nav{
-        margin-left: 40px;
-    }
-    nav ul{
-        justify-content: end;
-    }
-}
 
 
-@media screen and (min-width: 1200px){
-    header{
-        width:1140px;
-    }
-}
-@media screen and (min-width: 1200px) {
-    #home {
-        max-width: 1140px;
-    }
-}
 
-.slider img{
+.slider img {
     width: 53%;
     height: 53%;
     margin: 10px 0;
     border-radius: 5px;
 }
 
-@media screen and (min-width: 992px){
-    .slider img {
-        padding: 0 30px 50px 0;
-    }
-}
-
-@media screen and (min-width: 1200px){
-    .slider img {
-        width: 65%;
-        height: 65%;
-    }
-}
-
 
 
 /* <!-- Serena e giuseppe --> */
-/* sezione blog e about us */
+
+
+/* ABOUT US */
+
 
 #about {
     padding: 100px 0px;
     background: #F6F6F6;
+
 }
+
+#aboutContainer {
+    width: 91vw;
+    margin: 0 auto;
+}
+
+
+/* BLOG */
+
 #blog {
     position: relative;
     background-image: url('../images/blog/blog-bg.jpg');
@@ -461,7 +428,7 @@ nav ul li:hover{
 }
 
 
-/* More info */
+/* More info Button */
 
 .moreInfo {
     display: inline-block;
@@ -479,129 +446,105 @@ nav ul li:hover{
 }
 
 
-/* Media query griglia */
-
-@media screen and (min-width: 576px) {
-    .riquadroGriglia {
-        width: 95vw;
-    }
-}
-
-@media screen and (min-width: 768px) {
-
-    .testoGriglia {
-        padding-top: 3em;
-    }
-
-    .riquadroGriglia {
-        width: 360px;
-        height: 270px;
-    }
-
-#about .block {
-    text-align: center;
-}
-    #griglia {
-        grid-template-areas:
-            "uno due"
-            "tre quattro"
-            "sei cinque"
-            "otto sette"
-            "nove dieci"
-            "undici dodici";
-    }
-
-    .ordine1 {
-        order: 1;
-    }
-    .ordine2 {
-        order: 2;
-    }
-#about .block p {
-    color: #959595;
-    font-size: 16px;
-    line-height: 26px;
-    padding: 40px 0px;
-}
-    .testoGriglia::after {
-        display: block;
-        top: 45%;
-    }
-
-    .testoDiverso::after {
-        left: 21.5em;
-        display:block;
-        top: 45%;
-    }
-
-    #moreInfoDiv {
-        justify-content: center;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .riquadroGriglia {
-        width: 235px;
-        height: 266px;
-    }
-
-    .testoGriglia {
-        padding: 3em;
-    }
-
-    .testoGriglia h3 {
-        padding: 0 1.5em;
-    }
-
-    #griglia {
-        grid-template-areas:
-            "uno due tre quattro"
-            "cinque sei sette otto"
-            "nove dieci undici dodici";
-    }
-
-    .riquadroGriglia img {
-        width: auto;
-        height: auto;
-    }
-
-
-    .riquadroGriglia img.middleImg {
-        width: 100%;
-        height: auto;
-    }
-
-    .testoDiverso::after {
-        left: 13.7em;
-    }
-    
-    #moreInfoDiv {
-        justify-content: flex-end;
-        padding: 0;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .riquadroGriglia {
-        width: 293px;
-        height: 220px;
-    }
-
-    .riquadroGriglia img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .testoDiverso::after {
-        left: 17.4em;
-    }
-}
-
-
 /* <!-- Valeria e Angelo--> */
-/* menu e newsletter */
 
- #news {
+
+
+/* MENU */
+
+
+#menu h1 span {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#menu hr {
+    left: 50%;
+    width: 140px;
+    height: 1px;
+    position: absolute;
+    margin-left: -70px;
+    background-color: #c8c1b3;
+    border: none;
+}
+
+#menu .primo {
+    padding-top: 40px;
+    text-align: center;
+    line-height: 26px;
+    padding-bottom: 30px;
+
+}
+
+#menu h3 {
+    text-align: start;
+    text-transform: uppercase;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+#menu ul h2 {
+    font-weight: normal;
+}
+
+#menu ul {
+    text-align: start;
+}
+
+#menu ul li span {
+    font-size: 15px;
+    display: block;
+    float: none;
+    padding-top: 10px;
+}
+
+#menu ul li p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0px;
+}
+
+#containerNoBg ul {
+    padding-bottom: 30px;
+}
+
+#btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#btn .buttonMenu {
+    text-decoration: none;
+    border: 1px solid orangered;
+    padding: 28px 100px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: orangered;
+}
+
+#btn .buttonMenu:hover {
+    background-color: orangered;
+    color: white;
+}
+
+#menu {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+}
+
+#containerNoBg {
+    margin: 0 auto;
+    width: 91vw;
+}
+
+
+
+/* NEWS */
+
+#news {
     position: relative;
     background-image: url('../images/subscribe-bg.jpg');
     background-repeat: no-repeat;
@@ -611,6 +554,7 @@ nav ul li:hover{
     z-index: -2;
     padding-bottom: 7em;
 }
+
 
 #news::before {
     content: '';
@@ -624,6 +568,10 @@ nav ul li:hover{
     z-index: -1;
 }
 
+#newsContainer {
+    width: 91vw;
+    margin: 0 auto;
+}
 
 #news h1 {
     text-transform: uppercase;
@@ -642,55 +590,37 @@ nav ul li:hover{
 }
 
 #inputNews {
-    width: 95%;
+    width: 100%;
     height: 65px;
     border: none;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 #news button {
     padding: 25.6px 50px;
-    margin: 10px;
     display: block;
     background-color: #7ec3bb;
     color: #fff;
     border: none;
 }
 
-@media screen and (min-width: 768px) {
-    #inputNews {
-        width: 450px;
-        height: 65.5px;
-        margin-right: 0;
-    }
 
-    #news button {
-        display: inline-block;
-        margin-left: 0;
-    }
 
-    .form {
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-    }
-}
+/* CONTACTS */
 
 #contacts {
     margin: auto;
 }
 
-@media screen and (min-width: 1200px) {
-    #contacts {
-        max-width: 1140px;
-    }
-}
+
 
 #contacts form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 20px;
+    
 }
 
 form input {
@@ -722,7 +652,7 @@ form textarea {
     height: 48px;
     width: 100%;
     margin: 10px 0;
-    
+
     border: none;
     background-color: #ff4f02;
     color: #fff;
@@ -731,18 +661,19 @@ form textarea {
 
 
 
-/* Aside: contact, latest, photo stream - Serena */
+/* ASIDE */
 
 aside {
     display: flex;
     flex-wrap: wrap;
-    padding: 1em;
+    padding: 1em 0;
     text-align: left;
     justify-content: center;
     margin: 5em auto 2em;
+    width: 91vw;
 }
 
-aside > div {
+aside>div {
     width: 100%;
 }
 
@@ -808,49 +739,10 @@ address {
 }
 
 
-/* media query aside */
-
-@media screen and (min-width: 768px) {
-
-    aside {
-        width: 47em;
-    }
-
-    #info li {
-        display: inline-block;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    aside {
-        width: 60em;
-        justify-content: space-between;
-    }
-
-    aside > div {
-        width: 30%;
-    }
-
-    #info li {
-        display: block;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-
-    aside {
-        width: 75em;
-    }
-
-    aside > div {
-        width: 33.33%;
-    }
-}
 
 
 
-
-/* Footer - Serena */
+/* FOOTER */
 
 footer {
     background-color: #E9E9E9;
@@ -869,95 +761,132 @@ footer a {
     color: #ff5333;
     text-decoration: none;
 }
-#menu h1 span {
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: bold;
+
+
+/* MEDIA */
+
+
+
+/* media 576px */
+
+
+
+@media screen and (min-width: 576px) {
+
+    header,
+    #home,
+    #aboutContainer,
+    .riquadroGriglia,
+    #containerNoBg,
+    #newsContainer,
+    aside {
+        width: 95vw;
+    }
 }
 
-#menu hr {
-    left: 50%;
-    width: 140px;
-    height: 1px;
-    position: absolute;
-    margin-left: -70px;
-    background-color: #c8c1b3;
-    border: none;
-}
-#menu .primo {
-    padding-top: 40px;
-    text-align: center;
-    line-height: 26px;
-    padding-bottom: 30px;
 
+/* media 768px */
+
+@media screen and (min-width: 768px) {
+
+    header,
+    #home,
+    #aboutContainer,
+    #containerNoBg,
+    #newsContainer,
+    #contacts,
+    aside {
+        width: 720px;
+    }
+    #contacts form{
+        margin: 0;
+    }
+
+    #contacts h3{
+        margin-left: 0;
+    }
 }
 
-#menu h3 {
-    text-align: start;
-    text-transform: uppercase;
-    padding-top: 60px;
-    padding-bottom: 30px;
+
+@media screen and (min-width: 768px) {
+    header {
+
+        flex-wrap: nowrap;
+    }
+
+    header label {
+        display: none;
+    }
+
+    nav {
+        height: auto;
+        overflow: none;
+        width: 70%;
+        position: static;
+        background-color: rgba(255, 255, 255, 0);
+        padding-left: 15px;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        font-size: 0.8rem;
+        width: auto;
+    }
+
+    nav ul li:hover {
+        border: 0;
+        width: auto;
+        border-bottom: 2px solid red;
+
+    }
+
+    nav ul li:first-child {
+        border-bottom: 2px solid red;
+    }
 }
-#menu ul h2 {
-    font-weight: normal;
-}
-#menu ul {
-    text-align: start;
-}
-#menu ul li span{
-    font-size: 15px;
-    display: block;
-    float: none;
-    padding-top: 10px;
-}
-#menu ul li p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    margin: 0px;
-}
-#containerNoBg ul {
-    padding-bottom: 30px;
-}
-#btn {
-    display: flex;
-    justify-content: flex-end;
-}
-#btn .buttonMenu {
-    text-decoration: none;
-    border: 1px solid orangered;
-    padding: 28px 100px;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: orangered;
-}
-#btn .buttonMenu:hover {
-    background-color: orangered;
-    color: white;
-}
-#menu {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  
-}
-#containerNoBg {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
+
+
+@media screen and (min-width: 768px) {
+
+    #info li {
+        display: inline-block;
+    }
 }
 
 @media screen and (min-width: 768px) {
-    #containerNoBg {
-        width: 750px; 
+    #inputNews {
+        width: 450px;
+        height: 65.5px;
     }
+
+    #news button {
+        display: inline-block;
+        margin-left: 0;
+    }
+
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
     #menu .primo {
         padding: 40px 133px 0px
     }
-    
+
     #menu #containerNoBg ul li .item {
         position: relative;
     }
+
     #menu #containerNoBg ul li .item h2 {
         position: relative;
         display: inline-block;
@@ -965,10 +894,12 @@ footer a {
         z-index: 99;
         background: #fff;
     }
+
     #menu #containerNoBg ul li .item span {
         float: right;
         padding: 0px;
     }
+
     #menu #containerNoBg ul li .item .lista {
         position: absolute;
         top: 0;
@@ -977,16 +908,218 @@ footer a {
         border: 1px dotted #C9C9C9;
         margin-top: 20px;
     }
-    
+
 }
-@media screen and (min-width: 992px) {
-    #containerNoBg {
-        width: 970px; 
+
+@media screen and (min-width: 768px) {
+
+    .testoGriglia {
+        padding-top: 3em;
     }
-}
-@media screen and (min-width: 1200px) {
-    #containerNoBg {
-        width: 1170px; 
+
+    .riquadroGriglia {
+        width: 360px;
+        height: 270px;
+    }
+
+
+    #griglia {
+        grid-template-areas:
+            "uno due"
+            "tre quattro"
+            "sei cinque"
+            "otto sette"
+            "nove dieci"
+            "undici dodici";
+    }
+
+    .ordine1 {
+        order: 1;
+    }
+
+    .ordine2 {
+        order: 2;
+    }
+
+    .testoGriglia::after {
+        display: block;
+        top: 45%;
+    }
+
+    .testoDiverso::after {
+        left: 21.5em;
+        display: block;
+        top: 45%;
+    }
+
+    #moreInfoDiv {
+        justify-content: center;
     }
 }
 
+
+
+
+
+
+
+/* media 992 */
+
+@media screen and (min-width: 992px) {
+
+    header,
+    #home,
+    #aboutContainer,
+    #containerNoBg,
+    #newsContainer,
+    #contacts,
+    aside {
+        width: 940px;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    .slider img {
+        padding: 0 30px 50px 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        width: 95%;
+    }
+
+    header nav {
+        margin-left: 40px;
+    }
+
+    nav ul {
+        justify-content: end;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    aside {
+        justify-content: space-between;
+    }
+
+    aside>div {
+        width: 30%;
+    }
+
+    #info li {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .riquadroGriglia {
+        width: 235px;
+        height: 266px;
+    }
+
+    .testoGriglia {
+        padding: 3em;
+    }
+
+    .testoGriglia h3 {
+        padding: 0 1.5em;
+    }
+
+    #griglia {
+        grid-template-areas:
+            "uno due tre quattro"
+            "cinque sei sette otto"
+            "nove dieci undici dodici";
+    }
+
+    .riquadroGriglia img {
+        width: auto;
+        height: auto;
+    }
+
+
+    .riquadroGriglia img.middleImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .testoDiverso::after {
+        left: 13.7em;
+    }
+
+    #moreInfoDiv {
+        justify-content: flex-end;
+        padding: 0;
+    }
+}
+
+
+
+
+/* media 1200px */
+
+
+@media screen and (min-width: 992px) {
+
+    header,
+    #home,
+    #aboutContainer,
+    #containerNoBg,
+    #newsContainer,
+    #contacts,
+    aside {
+        width: 1172px;
+    }
+    
+}
+
+/* @media screen and (min-width: 1200px) {
+    header {
+        width: 1140px;
+    }
+} */
+
+
+@media screen and (min-width: 1200px) {
+
+
+    aside>div {
+        width: 33.33%;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+    .riquadroGriglia {
+        width: 293px;
+        height: 220px;
+    }
+
+    .riquadroGriglia img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .testoDiverso::after {
+        left: 17.4em;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .slider img {
+        width: 65%;
+        height: 65%;
+    }
+}
