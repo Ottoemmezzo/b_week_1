@@ -55,7 +55,8 @@ h4 {
 }
 
 p {
-    color: #959595
+    color: #959595;
+    line-height: 20px;
 }
 
 aside p {
@@ -120,17 +121,6 @@ footer p {
     z-index: -1;
 }
 
-/* #blog {
-    position: relative;
-    background-image: url('../images/overlay-pattern2.png'), url('../images/blog/blog-bg.jpg');
-    background-repeat: repeat, no-repeat;
-    opacity: 0.3, 1;
-    background-attachment: fixed;
-    width: 100%;
-    z-index: -2;
-    padding-bottom: 7em;
-} */
-
 #blog h1 {
     text-transform: capitalize;
 }
@@ -172,7 +162,8 @@ footer p {
 }
 
 .testoGriglia h3 {
-    font-size: 1.3em;
+    font-size: 1.25em;
+    text-transform: none;
 }
 
 .testoGriglia p {
@@ -280,7 +271,7 @@ footer p {
 }
 
 
-/* Media query */
+/* Media query griglia */
 
 @media screen and (min-width: 576px) {
     .riquadroGriglia {
@@ -377,7 +368,7 @@ footer p {
 @media screen and (min-width: 1200px) {
     .riquadroGriglia {
         width: 293px;
-        height: 200px;
+        height: 220px;
     }
 
     .riquadroGriglia img {
