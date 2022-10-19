@@ -13,6 +13,12 @@
 
 
 
+/* CAMBIO MENU SCROLL */
+
+
+
+
+
 
 /* REVEALS */
 
@@ -305,9 +311,13 @@ nav a {
     font-size: 1em;
 }
 
-nav ul li:hover {
+nav ul li:hover, nav a.activeScroll {
     width: 100%;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #FF5333;
+}
+
+nav a.activeScroll {
+    padding-bottom: 10px;
 }
 
 #tendina:checked~nav {
@@ -1011,12 +1021,11 @@ footer a {
     nav ul li:hover {
         border: 0;
         width: auto;
-        border-bottom: 2px solid red;
-
+        border-bottom: 2px solid #FF5333;
     }
 
     nav ul li:first-child {
-        border-bottom: 2px solid red;
+        border-bottom: 2px solid transparent;
     }
 }
 
