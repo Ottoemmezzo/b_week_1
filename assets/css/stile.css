@@ -238,7 +238,7 @@ nav ul li:hover {
 
 .slider {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     width: 100%;
     overflow: scroll;
@@ -436,7 +436,7 @@ nav ul li:hover {
     background-color: #ff530a;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 2em 6.72em;
+    padding: 2em 6.49em;
 }
 
 #moreInfoDiv {
@@ -995,10 +995,7 @@ footer a {
 }
 
 @media screen and (min-width: 992px) {
-    header {
-        width: 95%;
-    }
-
+    
     header nav {
         margin-left: 40px;
     }
