@@ -20,7 +20,7 @@ body {
 
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 40px 0;
     font-weight: normal;
 }
@@ -88,6 +88,11 @@ hr {
     color: #fff;
 }
 
+input:focus, textarea:focus{
+    outline: none;
+}
+
+
 /* footer style */
 
 
@@ -105,11 +110,9 @@ footer p {
 
 
 #copertina {
-    /* background-image: url(../images/header.jpg);
-    height: 300px; */
     margin-bottom: -75px;
-    background-size: cover;
     position: relative;
+
 }
 
 #copertina img{
@@ -190,7 +193,7 @@ nav ul li:hover {
 }
 
 #tendina:checked~nav {
-    height: 300px;
+    height: 250px;
 }
 
 /* tolgo checkbox */
@@ -549,7 +552,6 @@ nav ul li:hover {
 
 
 
-
 #news {
     position: relative;
     background-image: url('../images/subscribe-bg.jpg');
@@ -570,12 +572,12 @@ nav ul li:hover {
     opacity: 0.3;
     width: 100%;
     height: 100%;
+    z-index: -1;
 }
 
 #newsContainer {
     width: 91vw;
     margin: 0 auto;
-    position: relative;
 }
 
 #news h1 {
@@ -602,12 +604,18 @@ nav ul li:hover {
     margin-bottom: 10px;
 }
 
+
 #news button {
     padding: 25.6px 50px;
     display: block;
     background-color: #7ec3bb;
     color: #fff;
     border: none;
+    cursor: pointer;
+}
+
+#news button:hover {
+    background-color: #69A8A0;
     cursor: pointer;
 }
 
@@ -635,6 +643,7 @@ nav ul li:hover {
 }
 
 form input {
+    font-family: myfont;
     margin: 5px 0;
     height: 48px;
     border: 1px solid #cbc4b5;
@@ -642,11 +651,15 @@ form input {
 }
 
 form textarea {
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     font-family: myfont;
     border: 1px solid #cbc4b5;
     padding-top: 5px;
     padding: 6px 12px;
+}
+
+#contacts form input:focus, textarea:focus{
+   border: 0.09px solid #7ec3bb;
 }
 
 #contacts span {
@@ -663,7 +676,7 @@ form textarea {
     height: 48px;
     width: 100%;
     margin: 10px 0;
-
+    cursor: pointer;
     border: none;
     background-color: #ff4f02;
     color: #fff;
@@ -814,6 +827,12 @@ footer a {
         margin: 0;
     }
 
+    #contacts button{
+        max-width: 512px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #contacts h3 {
         margin-left: 0;
     }
@@ -821,6 +840,10 @@ footer a {
 
 
 @media screen and (min-width: 768px) {
+
+    h1{
+        font-size: 2.3rem;
+    }
     header {
 
         flex-wrap: nowrap;
@@ -998,7 +1021,10 @@ footer a {
 }
 
 @media screen and (min-width: 992px) {
-    
+    header {
+        width: 95%;
+    }
+
     header nav {
         margin-left: 40px;
     }
@@ -1010,6 +1036,10 @@ footer a {
 
 
 @media screen and (min-width: 992px) {
+    #contacts button{
+        max-width: 512px;
+        margin-right: 0;
+    }
     aside {
         justify-content: space-between;
     }
