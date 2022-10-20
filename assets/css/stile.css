@@ -212,6 +212,23 @@ nav a.activeScroll {
     margin: 0 auto;
     display: inline-block;
     width: 91vw;
+    animation-duration: 0.5s;
+    animation-delay: 400ms;
+    animation-name: homeAni;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes homeAni {
+    0% {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .testo {
