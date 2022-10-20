@@ -24,7 +24,6 @@ window.onscroll = () => {
 
 
 
-
 // REVEAL
 
 function reveal() {
@@ -155,3 +154,26 @@ function revealInfo() {
 }
 
 window.addEventListener("scroll", revealInfo);
+
+
+
+
+// SLIDER
+
+const slidesContainer = document.getElementById("slides-container");
+const slide = document.querySelector(".slide");
+const nextButton = document.getElementById("arrow");
+var posizione = 0;
+var numeroImg = document.querySelectorAll(".immagine").length;
+
+nextButton.addEventListener("click", () => {
+  const imgWidth = document.querySelector("#immagineId").width;
+  
+  if (posizione == (numeroImg-2)) {
+	slidesContainer.scrollLeft -= imgWidth*numeroImg;
+	posizione = 0;
+} else {
+	slidesContainer.scrollLeft += imgWidth;
+  posizione++;
+}
+});
